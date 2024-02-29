@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="eng">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-<body>
-    <table>
-         <form action="">
-            <tr>
+<form action="#" method="1">
+    <table border="1">
+                     <tr>
                 <td>Ime:</td>
                 <td><input type="text" name="Ime"></td>
             </tr>
@@ -28,8 +21,5 @@
                     <button>Pošalji!</button>
                 </td>
              </tr>
-         </form>
     </table>
-
-</body>
-</html>
+</form>

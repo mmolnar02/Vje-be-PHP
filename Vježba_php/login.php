@@ -7,9 +7,8 @@
 </head>
 <body>
     <h1>Login</h1>
+    <?php
+    include_once "obrazac.php";
+    ?>
 </body>
 </html>
-
-<?php
-    include_once "obrazac.php";
-?>
