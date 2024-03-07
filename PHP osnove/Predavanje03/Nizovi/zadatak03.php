@@ -15,11 +15,19 @@ $kategorije = [
     'meso'
 ];
 
-$grupiranje = array_reduce($kategorije, function($v1, $v2){
-    print_r("1".$v1);
-    print_r('<br>');
-    print_r("2".$v2);
-   });
+$grupiraniNiz =
+    array_reduce(
+        array_keys($kategorije),
+        function ($izlaz, $kljuc) use ($kategorije) {
+            $izlaz[$kategorije[$kljuc]][] = $kljuc;
+            return $izlaz;
+        },
+        
+    );
+
+    print_r('<pre>');
+    print_r($grupiraniNiz);
+    print_r('</pre>');
 
 // [
 //     'voće' => [0, 2, 5, 6],
