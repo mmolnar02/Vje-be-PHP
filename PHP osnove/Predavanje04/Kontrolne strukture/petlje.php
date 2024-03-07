@@ -15,4 +15,15 @@ for ($i = 0; $i < 100; $i += 2) {
     }
     echo $i." ";
 }
+
+// Definirajte varijablu names i dodijelite joj niz koji sadrži pet imena.
+//  Koristeći petlju foreach, iz niza ispišite ključeve i pripadajuće im vrijednosti.
+
+$names = [ "Ivan", "Marko", "Josip", "Stjepan", "Ante" ];
+
+foreach ($names as $key => $value) {
+    echo "Ključ: ".$key;
+    echo "Vrijednost: ".$value."<br>";
+}
+
 ?>
