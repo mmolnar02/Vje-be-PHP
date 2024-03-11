@@ -25,15 +25,25 @@ $najveci_broj = max($brojevi);
 $prosjek = $suma / count($brojevi);
 
 // Filtriranje i ispis brojeva većih od prosječne vrijednosti
-$brojevi_veći_od_prosjeka = array_filter($brojevi, function($broj) use ($prosjek) {
+$Veći_od_prosjeka = array_filter($brojevi, function($broj) use ($prosjek) {
     return $broj > $prosjek;
 });
 
 // Ispis rezultata
-echo "Parni brojevi: " . implode(", ", $parni) . "\n" . "</br>";
-echo "Neparni brojevi: " . implode(", ", $neparni) . "\n" . "</br>";
-echo "Ukupna suma svih brojeva: " . $suma . "\n" . "</br>";
-echo "Najveći broj: " . $najveci_broj . "\n" . "</br>";
-echo "Brojevi veći od prosjeka (" . $prosjek . "): " . implode(", ", $brojevi_veći_od_prosjeka) . "\n" . "</br>";
 
+
+echo "<pre>";
+echo "Parni brojevi: ";
+print_r($parni);
+echo "Neparni brojevi: ";
+print_r($neparni);
+echo "Ukupna suma brojeva: ";
+print_r($suma);
+echo "Najveći broj: ";
+print_r($najveci_broj);
+echo "Prosjek: ";
+print_r($prosjek);
+echo "Broj veći od prosjeka: ";
+print_r($Veći_od_prosjeka);
+echo "</pre>";
 ?>
