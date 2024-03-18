@@ -45,7 +45,7 @@ function izracunajUkupniPrihod($filtriraneProdaje) {
 }
 
 // Imamo 2 različite kategorije, 'Aparati' i 'Elektronika'
-$kategorija = 'Elektronika';
+$kategorija = 'Aparati';
 // Promjenom kategorije možemo testirate funkcije
 
 $filtriraneProdaje = filtrirajPoKategoriji($prodaja, $kategorija);
@@ -56,3 +56,16 @@ echo "Ukupni prihod od prodaje u kategoriji '$kategorija' je: $ukupniPrihod";
 print_r('<pre>');
 print_r($filtriraneProdaje);
 print_r('</pre>');
+
+/*
+Strukturirajte podatke tako da imate sve potrebne informacije o filtriranim prodajama i ukupnom prihodu u jednom asocijativnom nizu koji će biti spreman u JSON formatu.
+*/
+
+$podatci = [
+    'filtriraneProdaje' => $filtriraneProdaje,
+    'ukupniPrihod' => $ukupniPrihod
+];
+
+$podatciJSON = json_encode($podatci);
+
+file_put_contents(__DIR__."/rezultati.json", $podatciJSON) or die("Unable to write to file!");
