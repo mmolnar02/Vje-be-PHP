@@ -2,5 +2,9 @@
     {
         "username": "adasd",
         "password": "$2y$10$sLEBAExY3pSP0WrhgZ21YuNuTf0OEVK7Lu3UTUBQI\/gUkzT51ZbVG"
+    },
+    {
+        "username": "fisherman",
+        "password": "$2y$10$faGftzkhF6byy7O1KFFzoOwooaYwxjviFUi\/y287hqEKee5X60uIS"
     }
 ]

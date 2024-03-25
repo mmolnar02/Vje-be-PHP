@@ -55,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             
             setcookie('algebra', $username, time() + (86400 * 30), '/', '', false, true);
 
-            // header('Location: pocetna.php');
+            header('Location: pocetna.php');
             exit;
         };
 
@@ -65,4 +65,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
      } else {
         header('Location: registracija-obrazac.php');
         exit;
-}
+        }
